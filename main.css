@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100svh;
+  
+  font-family: system-ui;
+  
+  background: #37394B;
+}
+
+.wrapper {
+  width: 90%;
+  
+  padding: 2rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
+}
+
+
+.btn-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  
+  margin-top: 2.5rem;
+}
+
+button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.875rem;
+  
+  width: 75px;
+  height: 75px;
+  
+  background: transparent;
+  outline: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+}
+
+.line {
+  width: 70%;
+  height: 5px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100vw;
+  transition: .3s ease-in-out;
+}
+
+button:hover .line {
+  background: #19B0F5;
+}
+
+/* btn 1 */
+.btn-one:hover :first-child {
+  transform: rotate(45deg) translate(13px, 13px) scaleX(1.25);
+}
+
+.btn-one:hover :nth-child(2) {
+  transform: scaleX(0);
+}
+
+.btn-one:hover :last-child {
+  transform: rotate(-45deg) translate(13px, -13px) scaleX(1.25);
+}
+
+/* btn 2*/
+.btn-two:hover :first-child {
+  width: 30%;
+}
+
+.btn-two:hover :nth-child(2) {
+  width: 50%;
+}
+
+.btn-two:hover :last-child {
+  width: 30%;
+}
+
+/* btn 3 */
+.btn-three:hover :first-child {
+  transform: scaleX(.25);
+  transform-origin: right;
+}
+
+.btn-three:hover :nth-child(2) {
+  transform: scaleX(.5);
+  transform-origin: right;
+}
+
+.btn-three:hover :last-child {
+  transform: scaleX(.75);
+  transform-origin: right;
+}
+
+/* btn 4 */
+.btn-four:hover :first-child {
+  transform: rotate(90deg) translateX(5px) scaleX(.5);
+}
+
+.btn-four:hover :nth-child(2) {
+  transform: scaleX(1);
+}
+
+.btn-four:hover :last-child {
+  transform: rotate(-90deg) translateX(5px) scaleX(.5);
+}
+
+/* btn 5 */
+.btn-five:hover :first-child {
+  width: 7px;
+  height: 7px;
+  transform: translate(-21px, 21px);
+}
+
+.btn-five:hover :nth-child(2) {
+  width: 7px;
+  height: 7px;
+}
+
+.btn-five:hover :last-child {
+  width: 7px;
+  height: 7px;
+  transform: translate(21px, -21px);
+}
+
+/* btn 6 */
+.btn-six:hover :first-child {
+  transform: rotate(45deg) translateY(13px) scaleX(.5);
+}
+
+.btn-six:hover :nth-child(2) {
+  transform: rotate(-45deg);
+}
+
+.btn-six:hover :last-child {
+  transform: rotate(45deg) translateY(-13px) scaleX(.5);
+}
